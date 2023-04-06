@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:siri_wave/siri_wave.dart';
 import 'package:speech_to_text/speech_to_text.dart' as stt;
 
-class SiriScreen extends StatefulWidget {
+class HomeScreen extends StatefulWidget {
   @override
-  State<SiriScreen> createState() => _SiriScreenState();
+  State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _SiriScreenState extends State<SiriScreen> with TickerProviderStateMixin {
+class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   final siriController = SiriWaveController();
   late stt.SpeechToText _speech;
   bool _isListening = false;

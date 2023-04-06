@@ -1,14 +1,14 @@
 // ignore_for_file: prefer_final_fields, library_private_types_in_public_api
 import 'package:flutter/material.dart';
 
-class PaywallPage extends StatefulWidget {
-  const PaywallPage({Key? key}) : super(key: key);
+class PaywallScreen extends StatefulWidget {
+  const PaywallScreen({Key? key}) : super(key: key);
 
   @override
-  _PaywallPageState createState() => _PaywallPageState();
+  _PaywallScreenState createState() => _PaywallScreenState();
 }
 
-class _PaywallPageState extends State<PaywallPage> {
+class _PaywallScreenState extends State<PaywallScreen> {
   List<SubscriptionPlan> _subscriptionPlans = [
     SubscriptionPlan(name: 'Basic', price: '4.99', duration: '1 month'),
     SubscriptionPlan(name: 'Premium', price: '9.99', duration: '6 months'),

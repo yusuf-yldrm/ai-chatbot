@@ -27,8 +27,8 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: '/',
       routes: {
-        '/': (context) => SiriScreen(),
-        '/paywall': (context) => PaywallPage(),
+        '/': (context) => HomeScreen(),
+        '/paywall': (context) => PaywallScreen(),
         '/settings': (context) => SettingsScreen(),
       },
       debugShowCheckedModeBanner: false,
