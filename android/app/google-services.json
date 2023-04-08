@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "900321771981",
+    "project_id": "use-for-openai",
+    "storage_bucket": "use-for-openai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900321771981:android:c2c15335ec0ad8ac304484",
+        "android_client_info": {
+          "package_name": "com.example.use"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900321771981-uv21daq3e3qugnoiiu605o78hpbda66p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ4qCcuXCGBwKTiLybGA8I4oSD_rOsz9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "900321771981-uv21daq3e3qugnoiiu605o78hpbda66p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "900321771981-0rufbo44ddjkkflnksoe9hm6ss0b02em.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.revoo.use"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900321771981:android:d0ff58be74ef567d304484",
+        "android_client_info": {
+          "package_name": "com.revoo.use"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900321771981-uv21daq3e3qugnoiiu605o78hpbda66p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ4qCcuXCGBwKTiLybGA8I4oSD_rOsz9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "900321771981-uv21daq3e3qugnoiiu605o78hpbda66p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "900321771981-0rufbo44ddjkkflnksoe9hm6ss0b02em.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.revoo.use"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
