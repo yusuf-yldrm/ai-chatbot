@@ -50,20 +50,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCSnnskV5fqF015I40W3Xd5VHHeucbJxI4',
-    appId: '1:842949427149:android:a4c99a7f4ca99f221c8e84',
-    messagingSenderId: '842949427149',
-    projectId: 'meme-generator-ab606',
-    storageBucket: 'meme-generator-ab606.appspot.com',
+    apiKey: 'AIzaSyD-3-CDY5Vl0OFmJCVbSXKEvStUKBQw4Gw',
+    appId: '1:849645276839:android:f831a5f9ba60041971d582',
+    messagingSenderId: '849645276839',
+    projectId: 'ai-chatbot-e3dcc',
+    storageBucket: 'ai-chatbot-e3dcc.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDQmYZPfPr5AbdGJ6KXlgI2Lto-1hHrsLA',
-    appId: '1:842949427149:ios:080e46bd8ec9ad161c8e84',
-    messagingSenderId: '842949427149',
-    projectId: 'meme-generator-ab606',
-    storageBucket: 'meme-generator-ab606.appspot.com',
-    iosClientId: '842949427149-vjhues4auo73skpnfiernb95fla0t6mn.apps.googleusercontent.com',
-    iosBundleId: 'com.example.memeGenerator',
+    apiKey: 'AIzaSyA52wWtzf4LD4zbqTjYpzv3dWFh5s4Yt0g',
+    appId: '1:849645276839:ios:9e32a6056d8a978371d582',
+    messagingSenderId: '849645276839',
+    projectId: 'ai-chatbot-e3dcc',
+    storageBucket: 'ai-chatbot-e3dcc.appspot.com',
+    iosClientId: '849645276839-m2ba3dj237hf05d902uq4sddp30g3hsv.apps.googleusercontent.com',
+    iosBundleId: 'com.example.use',
   );
 }

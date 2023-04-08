@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>842949427149-vjhues4auo73skpnfiernb95fla0t6mn.apps.googleusercontent.com</string>
+	<string>849645276839-m2ba3dj237hf05d902uq4sddp30g3hsv.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.842949427149-vjhues4auo73skpnfiernb95fla0t6mn</string>
+	<string>com.googleusercontent.apps.849645276839-m2ba3dj237hf05d902uq4sddp30g3hsv</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDQmYZPfPr5AbdGJ6KXlgI2Lto-1hHrsLA</string>
+	<string>AIzaSyA52wWtzf4LD4zbqTjYpzv3dWFh5s4Yt0g</string>
 	<key>GCM_SENDER_ID</key>
-	<string>842949427149</string>
+	<string>849645276839</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.memeGenerator</string>
+	<string>com.example.use</string>
 	<key>PROJECT_ID</key>
-	<string>meme-generator-ab606</string>
+	<string>ai-chatbot-e3dcc</string>
 	<key>STORAGE_BUCKET</key>
-	<string>meme-generator-ab606.appspot.com</string>
+	<string>ai-chatbot-e3dcc.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:842949427149:ios:080e46bd8ec9ad161c8e84</string>
+	<string>1:849645276839:ios:9e32a6056d8a978371d582</string>
 </dict>
 </plist>
