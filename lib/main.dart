@@ -42,29 +42,35 @@ void main() async {
 
   try {
     // Firebase
-    await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+    await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform);
     await RemoteConfigService().initialize();
     FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
 
     PackageInfo packageInfo = await PackageInfo.fromPlatform();
     final String platform = Platform.isAndroid ? "Android" : "iOS";
     final Version? currentVersion = RemoteConfigService().versions.firstWhere(
-      (version) => version.number == packageInfo.version && version.platform == platform, orElse: null
-    );
+        (version) =>
+            version.number == packageInfo.version &&
+            version.platform == platform,
+        orElse: null);
+
     if (currentVersion != null) {
       dataStore.inReview = currentVersion.underReview;
     } else {
       dataStore.inReview = false;
     }
-    
+
     dataStore.messages = await MessageDatabase.instance.readAllMessages();
 
     PurchasesConfiguration configuration;
     if (Platform.isAndroid) {
-      configuration = PurchasesConfiguration("goog_bjZqTppaZDRKsWfZqIPBypyJbSz");
+      configuration =
+          PurchasesConfiguration("goog_bjZqTppaZDRKsWfZqIPBypyJbSz");
       await Purchases.configure(configuration);
     } else if (Platform.isIOS) {
-      configuration = PurchasesConfiguration("appl_zrMeuBBoYOYbbsjKoaxLKdZiLnf");
+      configuration =
+          PurchasesConfiguration("appl_zrMeuBBoYOYbbsjKoaxLKdZiLnf");
       await Purchases.configure(configuration);
     }
 
@@ -82,27 +88,22 @@ void main() async {
 
     CustomerInfo customerInfo = await Purchases.getCustomerInfo();
     if (customerInfo.entitlements.all["premium"] != null &&
-      customerInfo.entitlements.all["premium"]?.isActive == true) {
-        dataStore.hasPermission = true;
+        customerInfo.entitlements.all["premium"]?.isActive == true) {
+      dataStore.hasPermission = true;
     } else {
-        dataStore.hasPermission = false;
+      dataStore.hasPermission = false;
     }
 
     start(dataStore);
-  } catch (_) { 
-      start(dataStore);
+  } catch (_) {
+    start(dataStore);
   }
 }
 
 void start(DataStore dataStore) {
-  runApp(
-    MultiProvider(
-      providers: [
-        ChangeNotifierProvider.value(value: dataStore),
-      ],
-      child: App()
-    )
-  );
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider.value(value: dataStore),
+  ], child: App()));
 }
 
 class App extends StatefulWidget {
@@ -113,7 +114,6 @@ class App extends StatefulWidget {
 }
 
 class AppState extends State<App> {
-
   // Initialization
 
   @override
@@ -128,7 +128,9 @@ class AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      initialRoute: Provider.of<DataStore>(context, listen: false).isFirstLaunch ? AppRoutes.Onboarding : AppRoutes.BottomBar,
+      initialRoute: Provider.of<DataStore>(context, listen: false).isFirstLaunch
+          ? AppRoutes.Onboarding
+          : AppRoutes.BottomBar,
       getPages: AppPages.list,
       debugShowCheckedModeBanner: false,
       theme: AppTheme.dark,
